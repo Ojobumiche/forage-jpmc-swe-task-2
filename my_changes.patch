@@ -1,0 +1,12 @@
+diff --git a/src/Graph.tsx b/src/Graph.tsx
+index 079d707..89df413 100644
+--- a/src/Graph.tsx
++++ b/src/Graph.tsx
+@@ -33,6 +33,7 @@ class Graph extends Component<IProps, {}> {
+   componentDidMount() {
+     // Get element to attach the table from the DOM.
+     const elem = document.getElementsByTagName('perspective-viewer')[0] as unknown as PerspectiveViewerElement;
++    // adding more attributes to the table
+     elem.setAttribute('view', 'y_line');
+     elem.setAttribute('column-pivots', '["stock"]');
+     elem.setAttribute('row-pivots', '["timestamp"]');
